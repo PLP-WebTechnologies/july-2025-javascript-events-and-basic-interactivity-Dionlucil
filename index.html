@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Building Dynamic User Experiences with JavaScript</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Dynamic User Experiences</h1>
+      <p>Building Interactive Web Applications with JavaScript</p>
+    </header>
+    <div class="card">
+      <h2>Theme & Counter Controls</h2>
+      <div class="controls">
+        <button id="themeToggle">Toggle Dark Mode</button>
+        <button id="resetCounter">Reset Counter</button>
+      </div>
+      <div class="counter" id="counterDisplay">0</div>
+      <div class="controls">
+        <button id="increment">Increment</button>
+        <button id="decrement">Decrement</button>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Smart Form Validation</h2>
+      <form id="userForm">
+        <div>
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter username">
+          <div class="error" id="usernameError">Username must be at least 3 characters</div>
+        </div>
+        <div>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="Enter email">
+          <div class="error" id="emailError">Please enter a valid email address</div>
+        </div>
+        <div>
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter password">
+          <div class="error" id="passwordError">Password must be at least 6 characters</div>
+        </div>
+        <button type="submit">Create Account</button>
+        <div class="success" id="successMessage"></div>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
